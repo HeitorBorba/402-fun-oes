@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    display: flex;
+
+}
+.div1{
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 25%;
+    flex-direction: column;
+
+}
+div input{
+    align-items: center;
+    justify-content: center;
+}
