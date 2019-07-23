@@ -1,17 +1,44 @@
 body{
-    margin:0;
+    margin: 0;
     display: flex;
-
-}
-.div1{
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
-    margin-top: 25%;
+    height: 100vh;
+    
+}
+div button{
+    background-color: rgb(200, 200, 200);
+    border:none;
+    border-radius: 5%;
+    border:solid;
+    border-color: black;
+}
+
+div{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(107, 107, 97);
+    display: flex;
     flex-direction: column;
-
-}
-div input{
     align-items: center;
     justify-content: center;
+    border-color: black;
+    border:solid;
+    border-radius: 15%;
+}
+
+div input{
+    margin-bottom: 5px;
+    background-color: rgb(200, 200, 200);
+    border:none;
+    border-radius: 5%;
+    border:solid;
+    border-color: black;
+    text-decoration: black;
+    background-color: white;
+}
+
+
+div h2{
+    color: rgb(0, 0, 0);
 }

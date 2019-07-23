@@ -37,13 +37,59 @@
 // botao.onclick = cor
 
 
-let email2 = document.querySelector(#email);
-let senha2 = document.querySelector(#senha);
+let inputEmail = document.querySelector("#inputEmail");
+let inputSenha = document.querySelector("#inputSenha");
+let resposta = document.querySelector("p");
+let botao = document.querySelector("button");
 
-function valdiarlogin(){
-    if(email2.value == 'heitorbc3@gmail.com' && senha2.value == '123teste'){
-       
+function validarLogin() {
+    if (inputEmail.value == "critianpedroso@gmail.com" && inputSenha.value == "123") {
+        resposta.innerHTML = "Login Aprovado";
+        resposta.style.color = "green";
+        resposta.style.border = "2px green solid";
+        resposta.style.backgroundColor = "white";
     }
-    
-}
+    else if(inputEmail.value == 'heitorbc3@gmail.com' && inputSenha.value == '456'){
+            resposta.innerHTML = "Login Aprovado";
+            resposta.style.color = "green";
+            resposta.style.border = "2px green solid";
+            resposta.style.backgroundColor = "white";
+    }
+    else if(inputEmail.value == 'jooj@gmail.com' && inputSenha.value == '123456'){
+        resposta.innerHTML = "Login Aprovado";
+        resposta.style.color = "green";
+        resposta.style.border = "2px green solid";
+        resposta.style.backgroundColor = "white";
+    }
+    else if(inputEmail.value == '@gmail.com' && inputSenha.value == '1234567a'){
+        resposta.innerHTML = "Login Aprovado";
+        resposta.style.color = "green";
+        resposta.style.border = "2px green solid";
+        resposta.style.backgroundColor = "white";
+    }
+    else if(inputEmail.value == 'pedro@gmail.com' && inputSenha.value == '12344'){
+        resposta.innerHTML = "Login Aprovado";
+        resposta.style.color = "green";
+        resposta.style.border = "2px green solid";
+        resposta.style.backgroundColor = "white";
+    }
+    else if(inputEmail.value == 'lucas@gmail.com' && inputSenha.value == '12344'){
+        resposta.innerHTML = "Login Aprovado";
+        resposta.style.color = "green";
+        resposta.style.border = "2px green solid";
+        resposta.style.backgroundColor = "white";
+    }
+    else if(inputEmail.value == 'a@gmail.com' && inputSenha.value == '123j'){
+        resposta.innerHTML = "Login Aprovado";
+        resposta.style.color = "green";
+        resposta.style.border = "2px green solid";
+        resposta.style.backgroundColor = "white";
+    }
+    else {
+        resposta.innerHTML = "Login Inválido";
+        resposta.style.color = "red";
+        resposta.style.border = "4px red dotted";
+    }
 
+}
+botao.onclick = validarLogin;
